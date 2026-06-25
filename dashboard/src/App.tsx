@@ -993,7 +993,7 @@ export default function App() {
       <aside className="sidebar">
         <div>
           <div className="sidebar-logo-wrap">
-            <TRLogo />
+            <img src="/TR logo.png" alt="Thomson Reuters" className="sidebar-logo" />
           </div>
           <h1>ActionTrust</h1>
           <p className="muted sidebar-desc">GitHub Actions security hardening — tier-based classification, secret scanning, network policy, and credential rotation.</p>

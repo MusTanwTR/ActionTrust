@@ -147,6 +147,55 @@ type AssessmentResponse struct {
 	Limitations     []string           `json:"limitations"`
 }
 
+type SecretFinding struct {
+	ID           string `json:"id"`
+	Repository   string `json:"repository"`
+	WorkflowPath string `json:"workflowPath"`
+	SecretType   string `json:"secretType"`
+	Severity     string `json:"severity"`
+	Location     string `json:"location"`
+	Masked       string `json:"masked"`
+	Confirmed    bool   `json:"confirmed"`
+	Remediation  string `json:"remediation"`
+}
+
+type NetworkFinding struct {
+	ID           string `json:"id"`
+	Repository   string `json:"repository"`
+	WorkflowPath string `json:"workflowPath"`
+	Endpoint     string `json:"endpoint"`
+	Protocol     string `json:"protocol"`
+	ViaZscaler   bool   `json:"viaZscaler"`
+	CompanyOwned bool   `json:"companyOwned"`
+	Action       string `json:"action"`
+	Severity     string `json:"severity"`
+	Blocked      bool   `json:"blocked"`
+}
+
+type SecretRotationEntry struct {
+	SecretName        string `json:"secretName"`
+	Repository        string `json:"repository"`
+	LastRotatedDays   int    `json:"lastRotatedDays"`
+	Status            string `json:"status"` // "ok", "due", "overdue", "unknown"
+	NextRotationDays  int    `json:"nextRotationDays"`
+	AutoRotateEnabled bool   `json:"autoRotateEnabled"`
+}
+
+type HardeningSummary struct {
+	ThirdPartyBlocked int `json:"thirdPartyBlocked"`
+	ThirdPartyAllowed int `json:"thirdPartyAllowed"`
+	ThirdPartyTotal   int `json:"thirdPartyTotal"`
+	SecretLeaksFound  int `json:"secretLeaksFound"`
+	MaliciousPatterns int `json:"maliciousPatterns"`
+	NetworkViolations int `json:"networkViolations"`
+	SecretsOverdue    int `json:"secretsOverdue"`
+	SecretsDue        int `json:"secretsDue"`
+	SecretsOK         int `json:"secretsOk"`
+	Tier1Count        int `json:"tier1Count"`
+	Tier2Count        int `json:"tier2Count"`
+	Tier3Count        int `json:"tier3Count"`
+}
+
 type DatasetAssessmentRequest struct {
 	BasePath string `json:"basePath"`
 	Options  struct {
@@ -177,6 +226,7 @@ type RankedRisk struct {
 	EntityType        string     `json:"entityType"`
 	Score             int        `json:"score"`
 	Level             string     `json:"level"`
+	Tier              int        `json:"tier"` // 1=Block, 2=Review, 3=Approve
 	BusinessImpact    string     `json:"businessImpact"`
 	QuickChecks       int        `json:"quickChecks"`
 	DeepChecks        int        `json:"deepChecks"`
@@ -220,4 +270,8 @@ type DatasetAssessmentReport struct {
 	PrioritizedRecommendations []string                 `json:"prioritizedRecommendations"`
 	OperationalProcess         []OperationalPolicy      `json:"operationalProcess"`
 	CostAndScalabilityNotes    []string                 `json:"costAndScalabilityNotes"`
+	SecretFindings             []SecretFinding          `json:"secretFindings"`
+	NetworkFindings            []NetworkFinding         `json:"networkFindings"`
+	RotationStatus             []SecretRotationEntry    `json:"rotationStatus"`
+	HardeningSummary           HardeningSummary         `json:"hardeningSummary"`
 }

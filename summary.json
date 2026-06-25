@@ -1,0 +1,326 @@
+{
+  "live_workflow_files": 66090,
+  "workflow_files_with_actions": 63966,
+  "repos_using_actions": 16734,
+  "repos_with_application_mapping": 14210,
+  "total_action_uses": 236760,
+  "distinct_actions": 3178,
+  "avg_distinct_actions_per_repo": 4.87,
+  "avg_uses_per_repo": 14.15,
+  "pinning": {
+    "pinned_uses": 22437,
+    "unpinned_uses": 187294,
+    "pct_pinned_overall": 10.7
+  },
+  "by_source_type": {
+    "github_official": {
+      "uses": 119415,
+      "distinct_actions": 37,
+      "pct_of_uses": 50.4
+    },
+    "third_party": {
+      "uses": 54959,
+      "distinct_actions": 683,
+      "pct_of_uses": 23.2
+    },
+    "internal_tr": {
+      "uses": 35349,
+      "distinct_actions": 287,
+      "pct_of_uses": 14.9
+    },
+    "local": {
+      "uses": 27029,
+      "distinct_actions": 2167,
+      "pct_of_uses": 11.4
+    },
+    "docker": {
+      "uses": 8,
+      "distinct_actions": 4,
+      "pct_of_uses": 0.0
+    }
+  },
+  "top_25_actions": [
+    {
+      "action": "actions/checkout",
+      "source_type": "github_official",
+      "uses": 71051,
+      "repos": 14255,
+      "pct_pinned": 8.4
+    },
+    {
+      "action": "actions/upload-artifact",
+      "source_type": "github_official",
+      "uses": 14082,
+      "repos": 4288,
+      "pct_pinned": 9.0
+    },
+    {
+      "action": "actions/setup-java",
+      "source_type": "github_official",
+      "uses": 6557,
+      "repos": 2557,
+      "pct_pinned": 4.1
+    },
+    {
+      "action": "emibcn/badge-action",
+      "source_type": "third_party",
+      "uses": 6556,
+      "repos": 1105,
+      "pct_pinned": 20.6
+    },
+    {
+      "action": "actions/setup-node",
+      "source_type": "github_official",
+      "uses": 5903,
+      "repos": 3003,
+      "pct_pinned": 2.3
+    },
+    {
+      "action": "actions/setup-python",
+      "source_type": "github_official",
+      "uses": 5638,
+      "repos": 2489,
+      "pct_pinned": 6.6
+    },
+    {
+      "action": "tr/ContentSCM_Actions",
+      "source_type": "internal_tr",
+      "uses": 5109,
+      "repos": 159,
+      "pct_pinned": 0.0
+    },
+    {
+      "action": "actions/github-script",
+      "source_type": "github_official",
+      "uses": 4325,
+      "repos": 1731,
+      "pct_pinned": 38.2
+    },
+    {
+      "action": "actions/download-artifact",
+      "source_type": "github_official",
+      "uses": 4070,
+      "repos": 1592,
+      "pct_pinned": 5.2
+    },
+    {
+      "action": "release-drafter/release-drafter",
+      "source_type": "third_party",
+      "uses": 3603,
+      "repos": 1811,
+      "pct_pinned": 39.8
+    },
+    {
+      "action": "tr/prodsec_github_actions",
+      "source_type": "internal_tr",
+      "uses": 3430,
+      "repos": 1161,
+      "pct_pinned": 28.6
+    },
+    {
+      "action": "azure/login",
+      "source_type": "third_party",
+      "uses": 3234,
+      "repos": 413,
+      "pct_pinned": 1.5
+    },
+    {
+      "action": "actions/cache",
+      "source_type": "github_official",
+      "uses": 2973,
+      "repos": 1514,
+      "pct_pinned": 14.7
+    },
+    {
+      "action": "tr/gh-actions_tax4b",
+      "source_type": "internal_tr",
+      "uses": 2825,
+      "repos": 525,
+      "pct_pinned": 0.0
+    },
+    {
+      "action": "tr/cobaltcm_actions",
+      "source_type": "internal_tr",
+      "uses": 2664,
+      "repos": 507,
+      "pct_pinned": 40.0
+    },
+    {
+      "action": "microsoft/setup-msbuild",
+      "source_type": "third_party",
+      "uses": 2627,
+      "repos": 517,
+      "pct_pinned": 0.0
+    },
+    {
+      "action": "ncipollo/release-action",
+      "source_type": "third_party",
+      "uses": 2363,
+      "repos": 2088,
+      "pct_pinned": 29.3
+    },
+    {
+      "action": "actions/setup-dotnet",
+      "source_type": "github_official",
+      "uses": 2016,
+      "repos": 811,
+      "pct_pinned": 1.1
+    },
+    {
+      "action": "aws-actions/configure-aws-credentials",
+      "source_type": "third_party",
+      "uses": 1850,
+      "repos": 469,
+      "pct_pinned": 12.9
+    },
+    {
+      "action": "./.github/actions/nuget-restore",
+      "source_type": "local",
+      "uses": 1759,
+      "repos": 99,
+      "pct_pinned": 0.0
+    },
+    {
+      "action": "jfrog/setup-jfrog-cli",
+      "source_type": "third_party",
+      "uses": 1703,
+      "repos": 1098,
+      "pct_pinned": 31.7
+    },
+    {
+      "action": "tr/ss-baileys_gha-templates",
+      "source_type": "internal_tr",
+      "uses": 1426,
+      "repos": 58,
+      "pct_pinned": 0.0
+    },
+    {
+      "action": "tr/devops_lead-time-action",
+      "source_type": "internal_tr",
+      "uses": 1423,
+      "repos": 1307,
+      "pct_pinned": 48.6
+    },
+    {
+      "action": "tr/tr-atp-rlmgmt-performance-libs",
+      "source_type": "internal_tr",
+      "uses": 1262,
+      "repos": 9,
+      "pct_pinned": 0.0
+    },
+    {
+      "action": "tr/Manufacturing-Dev_caretaker-repo",
+      "source_type": "internal_tr",
+      "uses": 1185,
+      "repos": 67,
+      "pct_pinned": 0.0
+    }
+  ],
+  "top_15_unpinned_thirdparty": [
+    {
+      "action": "emibcn/badge-action",
+      "uses": 6556,
+      "repos": 1105,
+      "unpinned_uses": 5207,
+      "pct_pinned": 20.6
+    },
+    {
+      "action": "release-drafter/release-drafter",
+      "uses": 3603,
+      "repos": 1811,
+      "unpinned_uses": 2169,
+      "pct_pinned": 39.8
+    },
+    {
+      "action": "azure/login",
+      "uses": 3234,
+      "repos": 413,
+      "unpinned_uses": 3184,
+      "pct_pinned": 1.5
+    },
+    {
+      "action": "microsoft/setup-msbuild",
+      "uses": 2627,
+      "repos": 517,
+      "unpinned_uses": 2626,
+      "pct_pinned": 0.0
+    },
+    {
+      "action": "ncipollo/release-action",
+      "uses": 2363,
+      "repos": 2088,
+      "unpinned_uses": 1671,
+      "pct_pinned": 29.3
+    },
+    {
+      "action": "aws-actions/configure-aws-credentials",
+      "uses": 1850,
+      "repos": 469,
+      "unpinned_uses": 1612,
+      "pct_pinned": 12.9
+    },
+    {
+      "action": "jfrog/setup-jfrog-cli",
+      "uses": 1703,
+      "repos": 1098,
+      "unpinned_uses": 1163,
+      "pct_pinned": 31.7
+    },
+    {
+      "action": "wei/curl",
+      "uses": 1139,
+      "repos": 506,
+      "unpinned_uses": 1139,
+      "pct_pinned": 0.0
+    },
+    {
+      "action": "dorny/test-reporter",
+      "uses": 1131,
+      "repos": 895,
+      "unpinned_uses": 857,
+      "pct_pinned": 24.2
+    },
+    {
+      "action": "hashicorp/setup-terraform",
+      "uses": 1104,
+      "repos": 387,
+      "unpinned_uses": 1015,
+      "pct_pinned": 8.1
+    },
+    {
+      "action": "docker/login-action",
+      "uses": 894,
+      "repos": 529,
+      "unpinned_uses": 876,
+      "pct_pinned": 2.0
+    },
+    {
+      "action": "gradle/gradle-build-action",
+      "uses": 878,
+      "repos": 154,
+      "unpinned_uses": 863,
+      "pct_pinned": 1.7
+    },
+    {
+      "action": "varunsridharan/action-dynamic-readme",
+      "uses": 876,
+      "repos": 866,
+      "unpinned_uses": 712,
+      "pct_pinned": 18.7
+    },
+    {
+      "action": "PavanMudigonda/lines-of-code-reporter",
+      "uses": 855,
+      "repos": 854,
+      "unpinned_uses": 691,
+      "pct_pinned": 19.2
+    },
+    {
+      "action": "azure/arm-deploy",
+      "uses": 838,
+      "repos": 71,
+      "unpinned_uses": 831,
+      "pct_pinned": 0.8
+    }
+  ]
+}
